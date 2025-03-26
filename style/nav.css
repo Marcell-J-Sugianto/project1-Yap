@@ -1,0 +1,122 @@
+nav
+{
+    width: auto;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 60px auto minmax(140px, 200px);
+}
+
+.nav-logo
+{
+    height: 100%;
+    width: 60px;
+    background-color: red;
+}
+
+.nav-search-wrapper
+{
+    height: 60px;
+    width: auto;
+    background-color: blue;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.nav-subscribed-icon
+{
+    background-color: pink;
+    width: 60px;
+    height: 100%;
+}
+
+.nav-search-icon
+{
+    background-color: orange;
+    width: 60px;
+    height: 100%;
+}
+
+.nav-search-bar
+{
+    visibility: hidden;
+}
+
+.nav-button-wrapper
+{
+    height: 100%;
+    width: auto;
+    background-color: cyan;
+    display: flex;
+    align-items: center;
+}
+
+.nav-signup
+{
+    background-color: green;
+    width: 50%;
+    height: 80%;
+}
+
+.nav-login
+{
+    background-color: lime;
+    width: 50%;
+    height: 80%;
+}
+
+/* phone landscape */
+@media screen and (min-width:600px)
+{
+    nav
+    {
+        grid-template-columns: 180px auto 200px;
+    }
+
+    .nav-logo
+    {
+        width: 180px;
+    }
+}
+
+/* tablet portrait */ 
+@media screen and (min-width:801px)
+{
+    .nav-search-icon
+    {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .nav-subscribed-icon
+    {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .nav-search-bar
+    {
+        visibility: visible;
+        background-color: orange;
+        width: 350px;
+        height: 60%;
+        margin: auto;
+    }
+}
+
+/* tablet landscape */ 
+@media screen and (min-width:1025px) 
+{
+    .nav-search-bar
+    {
+        width: 450px;
+    }
+    
+}
+
+/* desktops */
+@media screen and (min-width:1281px)
+{
+    
+}

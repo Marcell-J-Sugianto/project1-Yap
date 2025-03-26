@@ -1,0 +1,60 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+main
+{
+    height: calc(100vh - 60px);
+}
+
+.main-section
+{
+    width: auto;
+    height: inherit;
+    background-color:maroon;
+}
+
+.side-bar
+{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+/* phone landscape */
+@media screen and (min-width:600px)
+{
+    
+}
+
+/* tablet portrait */ 
+@media screen and (min-width:801px)
+{
+    main
+    {
+        display: grid;
+        grid-template-columns: 30% auto;
+    }
+
+    .side-bar
+    {
+        width: auto;
+        height: 100%;
+        background-color: darkviolet;
+        visibility: visible;
+    }
+}
+
+/* tablet landscape */ 
+@media screen and (min-width:1025px) 
+{
+    
+}
+
+/* desktops */
+@media screen and (min-width:1281px)
+{
+    
+}
