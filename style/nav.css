@@ -118,5 +118,19 @@ nav
 /* desktops */
 @media screen and (min-width:1281px)
 {
-    
+    nav
+    {
+        width: 1200px;
+        margin: auto;
+    }
+
+    .nav-logo
+    {
+        border-bottom-left-radius: 5px;
+    }
+
+    .nav-button-wrapper
+    {
+        border-bottom-right-radius: 5px;
+    }
 }
