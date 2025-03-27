@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include_once('includes/db_connect.inc') ?>
     <link rel="stylesheet" href="style/nav.css">
     <link rel="stylesheet" href="style/main.css">
     <title><?php echo $title; ?></title>
