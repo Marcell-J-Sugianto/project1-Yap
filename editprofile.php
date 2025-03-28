@@ -40,6 +40,16 @@
     <input type="file" name="image" required><label>max image size: 1000px</label><br>
     <input type="submit" value="Change profile picture"><br><br>
 </form>
+
+<form action="editprofile_processing.php" method="post" enctype="multipart/form-data">
+    <label>Edit your welcome messages (max: 80 characters):<br></label>
+    <textarea name="welcomemessage" maxlength="80" required><?php echo $userData['welcomemessage']; ?></textarea><br><br>
+    
+    <label>Edit your about (max: 500 characters):<br></label>
+    <textarea name="about" maxlength="500" required><?php echo $userData['about']; ?></textarea><br><br>
+
+    <input type="submit" value="Confirm changes"><br><br>
+</form>
 </div>
 
 <?php include_once('inc/footer.inc')?>

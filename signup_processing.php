@@ -48,7 +48,7 @@ if ($stmt->affected_rows > 0)
 
     $conn->close();
     
-    header("Location:index.php");
+    header("Location:signin.php");
     exit(0);
 }
 else
