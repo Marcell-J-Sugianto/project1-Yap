@@ -29,8 +29,8 @@ else
 {
     $_SESSION['err'] = "An error has occurred!";
 
-    // Redirect back to login if fail
-    header("Location:signin.php?failMessage=Login failed!");
+    // Redirect back to sign in if fail
+    header("Location:signin.php?failMessage=Sign in failed!");
     exit(0);
 }
 ?>

@@ -17,7 +17,7 @@
             }
             else
             {
-                echo "<div class='nav-login'></div>";
+                echo "<div class='nav-signin'></div>";
                 echo "<div class='nav-signup'></div>";
             }
         ?>

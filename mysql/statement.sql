@@ -9,7 +9,7 @@ CREATE TABLE accounts
     username varchar(24),
     userpassword varchar(50),
     profilepicture varchar(50),
-    welcomemessage varchar(25), -- messages displayed in the banner of user yap page
+    welcomemessage varchar(50), -- messages displayed in the banner of user yap page
     about varchar(500), -- 500 word aboutme text
     subscriptions varchar(2000), -- other people that users subscribe to
     subscribers varchar(2000), -- people who subscribe to user

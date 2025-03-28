@@ -5,8 +5,11 @@
 $username = $_POST['username'];
 $userpassword = $_POST['userpassword'];
 
+$profilepicture = "default.png";
+$welcomemessage = "Hey, I'm $username. Welcome to my Yap page!";
+
 // Prevent injection and insert new data
-$sql = "insert into accounts (username, userpassword) values (?, SHA(?))";
+$sql = "insert into accounts (username, userpassword, profilepicture, welcomemessage) values (?, SHA(?), ?, ?)";
 $stmt = $conn->prepare($sql);
 
 // Prevent duplicate usernames from being used
@@ -24,7 +27,7 @@ while($row = $result->fetch_assoc())
 if(!$usernameExists)
 {
     // Add to database
-    $stmt->bind_param("ss", $username, $userpassword);
+    $stmt->bind_param("ssss", $username, $userpassword, $profilepicture, $welcomemessage);
     $stmt->execute();
 }
 else
