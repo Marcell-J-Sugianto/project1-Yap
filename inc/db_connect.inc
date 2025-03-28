@@ -9,7 +9,7 @@
         $servername = "localhost";
         $username = "root";
         $password = "";
-        $dbname = "petsvictoriamajorproject";
+        $dbname = "yap";
     }
 
     // Create connection

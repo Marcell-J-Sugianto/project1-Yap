@@ -24,6 +24,7 @@ CREATE TABLE posts
     content varchar(2000),
     images varchar(260),
     likecount SMALLINT,
+    timecreated DATETIME,
     
     PRIMARY KEY(postid),
     FOREIGN KEY(userid) REFERENCES accounts(userid)
@@ -36,6 +37,7 @@ CREATE TABLE comments
     userid SMALLINT NOT NULL,
     content varchar(2000),
     likecount SMALLINT,
+    timecreated DATETIME,
     
     PRIMARY KEY(commentid),
     FOREIGN KEY(postid) REFERENCES posts(postid),
@@ -49,6 +51,7 @@ CREATE TABLE replies
     userid SMALLINT NOT NULL,
     content varchar(2000),
     likecount SMALLINT,
+    timecreated DATETIME,
     
     PRIMARY KEY(replyid),
     FOREIGN KEY(commentid) REFERENCES comments(commentid),
