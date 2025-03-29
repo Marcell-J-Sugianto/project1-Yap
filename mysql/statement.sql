@@ -22,7 +22,6 @@ CREATE TABLE posts
     postid SMALLINT AUTO_INCREMENT NOT NULL,
     userid SMALLINT NOT NULL,
     content varchar(2000),
-    images varchar(260),
     likecount SMALLINT,
     timecreated DATETIME,
     

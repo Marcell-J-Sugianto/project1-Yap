@@ -8,7 +8,7 @@
     </h3>
     <br>
 
-    <form action="signup_processing.php" method="post">
+    <form action="signup_processing.php" method="post" enctype="multipart/form-data">
         <label for="username">Username</label>
         <input type="text" name="username" required>
         <br><br>

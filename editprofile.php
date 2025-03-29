@@ -7,7 +7,7 @@
         $_SESSION['err'] = "An error has occurred!";
 
         // Redirect to signin if not signed in
-        header("Location:signin.php?");
+        header("Location:signin.php");
         exit(0);
     }
 ?>
@@ -37,7 +37,7 @@
 
 <form action="profilepicture_processing.php" method="post" enctype="multipart/form-data">
     <label>Upload new profile picture: </label>
-    <input type="file" name="image" required><label>max image size: 1000px</label><br>
+    <input type="image" name="image" required><label>max image size: 1000px</label><br>
     <input type="submit" value="Change profile picture"><br><br>
 </form>
 

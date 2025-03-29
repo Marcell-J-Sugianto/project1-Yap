@@ -19,6 +19,19 @@ if ($result->num_rows > 0)
 {
     $_SESSION['username'] = $username;
 
+    require 'inc/db_connect.inc';
+    $result = $conn->query("SELECT * FROM accounts");
+
+    while($row = $result->fetch_assoc())
+    {
+        if($_SESSION['username'] == $row['username'])
+        {
+            $_SESSION['userid'] = $row['userid'];
+
+            break;
+        }
+    }
+
     $conn->close();
     
     // Redirect to home

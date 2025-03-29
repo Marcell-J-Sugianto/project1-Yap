@@ -4,11 +4,11 @@
 <div>
     <br>
     <h3>
-        Login
+        Sign in
     </h3>
     <br>
 
-    <form action="signin_processing.php" method="post">
+    <form action="signin_processing.php" method="post" enctype="multipart/form-data">
         <label for="username">Username</label>
         <input type="text" name="username" required>
         <br><br>
